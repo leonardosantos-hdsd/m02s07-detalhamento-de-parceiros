@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Listagem de Parceiros — Plataforma Coleta Seletiva</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">♻︎</div>
+        <div>
+          <div class="admin-area-title">
+            Área Administrativa
+          </div>
+          <div class="listagem-title">Listagem de Parceiros</div>
+        </div>
+      </div>
+      <nav aria-label="atalhos">
+        <ul>
+          <li><a href="index.html">Landing</a></li>
+          <li><a href="login.html">Sair</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container partners-container">
+      <div class="searchbar">
+        <label class="a11y-hidden" for="q">Pesquisar por nome ou bairro</label>
+        <input id="q" class="search-input" type="text" placeholder="Pesquisar por nome OU bairro..." />
+        <button id="btnSearch" class="btn btn-ghost">Pesquisar</button>
+      </div>
+
+      <div id="statusMsg" class="muted"></div>
+
+      <div id="cardsGrid" class="cards-grid" aria-live="polite" aria-busy="true">
+        <!-- Cards carregados via JS -->
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-text">
+      <small>Fonte: MockAPI • Clique em um card para ver detalhes</small>
+    </div>
+  </footer>
+
+  <script src="js/listagem-parceiros.js"></script>
+</body>
+</html>

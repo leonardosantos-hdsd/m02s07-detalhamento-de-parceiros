@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Detalhe do Parceiro — Plataforma Coleta Seletiva</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">♻︎</div>
+        <div>
+          <div class="admin-area-label">
+            Área Administrativa
+          </div>
+          <div class="detalhe-parceiro-title">Detalhamento do Parceiro</div>
+        </div>
+      </div>
+      <nav aria-label="atalhos">
+        <ul>
+          <li><a href="listagem-parceiros.html">← Voltar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="detail-wrap">
+        <div class="detail-top">
+          <button type="button" class="btn btn-ghost" onclick="history.back()">← Voltar</button>
+          <div id="statusDetail" class="muted" role="status" aria-live="polite">Carregando…</div>
+        </div>
+
+        <article id="detailCard" class="card detail-card" aria-live="polite" aria-busy="true">
+          <!-- conteúdo preenchido via JS -->
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-container">
+      <small>Clique em “Voltar” para retornar à listagem.</small>
+    </div>
+  </footer>
+
+  <script src="js/parceiro-detalhe.js"></script>
+</body>
+</html>
